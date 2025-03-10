@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* TAILWIND-CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'blacksword';
+  src: url('/public/fonts/blacksword.otf');
+}
+
+/* GLOBAL-STYLE */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(#000, #000) padding-box, linear-gradient(90deg, #6cc3fa, #ff88ce) border-box;
+  border: 1px solid #0000;
+}
+
+.bg-gradient {
+  background: rgb(40, 144, 221);
+  background: linear-gradient(135deg, rgba(40, 144, 221, 0.2) 70%, rgba(236, 0, 140, 0.2) 100%);
+}
+
+.table-head-bg {
+  background-image: url('/public/img/other/dashboard.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* SWEETALERT2 */
+.swal2-title {
+  margin-top: -1.05rem;
+}
+
+.swal2-icon {
+  margin-top: 1.45rem;
+}
+
+.swal2-confirm {
+  margin-top: -0.05rem;
+}
+
+.swal2-container {
+  z-index: 20000;
+  /*for show sweetalert2 over the mui dialog*/
+}
+
+/* DATE-PICKER */
+.position_center_absulate {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.no-date-picker-icon::-webkit-inner-spin-button,
+.no-date-picker-icon::-webkit-clear-button {
+  display: none;
+}
+
+/* BODY */
+body {
+  background-color: #000 !important;
+}
+
+/* SWIPER */
+.swiper {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-arrow {
+  -moz-appearance: textfield;
+}
+
+/* Track */
+.topup::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  /* Width of the entire scrollbar */
+}
+
+/* Handle */
+.topup::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  /* Color of the scrollbar handle */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+/* Handle on hover */
+.topup::-webkit-scrollbar-thumb:hover {
+  background-color: #9b9b9b;
+  /* Color of the scrollbar handle on hover */
+}
+
+/* REACT PHONE NUMBER INPUT */
+.react-tel-input {
+  font-size: 0.9rem !important;
+}
+
+.react-tel-input .form-control {
+  height: 3.5rem !important;
+  position: relative;
+  letter-spacing: 0.01rem;
+  border-radius: 10 !important;
+  margin-top: 10 !important;
+  margin-bottom: 10 !important;
+  width: 100% !important;
+  font-size: 0.9rem !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .react-tel-input .form-control {
+    height: 2.5rem !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .complycube-sdk-ui-Welcome-icon {
+    padding: 6em 0 6em 0 !important;
+  }
+
+  .complycube-sdk-ui-Modal-inner {
+    height: 21em !important;
+  }
+}
+
+.complycube-sdk-ui-Theme-scrollableContent {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  flex: none;
+  height: auto;
+}
+
+.complycube-sdk-ui-Modal-inner {
+  height: 25em;
+  width: auto;
+  position: relative;
+}
+
+.complycube-sdk-ui-Uploader-contentWrapper,
+.complycube-sdk-ui-Uploader-uploaderWrapper {
+  height: 22em;
+}
+
+.complycube-sdk-ui-Theme-footer,
+.complycube-sdk-ui-NavigationBar-navigation,
+.complycube-sdk-ui-PageTitle-titleWrapper,
+.complycube-sdk-ui-Welcome-text {
+  display: none;
+}
+
+.complycube-sdk-ui-Welcome-icon {
+  padding: 8em 0 8em 0;
+}
+
+.ods-button.-action--primary {
+  background-color: #8dc63f;
+  border-color: #7eaf31;
+}
+
+.ods-button.-action--primary:hover {
+  background-color: #7eaf31;
+}
+
+.complycube-sdk-ui-crossDevice-CrossDeviceLink-qrCodeContainer svg {
+  margin: auto;
+}
+
+.MuiFormHelperText-root
+  .MuiFormHelperText-sizeMedium
+  .MuiFormHelperText-contained
+  .MuiFormHelperText-filled
+  .css-2dnmjy-MuiFormHelperText-root {
+  margin-left: 0px !important;
+}
+
+svg g g line {
+  stroke-dasharray: 4;
+  stroke-width: 0.5;
+}
+
+.gradient-border {
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, #6cc3fa, #ff88ce) border-box;
+}
+
+.white-border {
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, #262626, #262626) border-box;
+}
+
+.gradient-border-radius {
+  border-radius: 50em;
+
+  border: 2px solid transparent;
+}
+
+.gradient-border-global {
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, #6cc3fa, #ff88ce) border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.gradient-dashed-border {
+  background: linear-gradient(#0a0a0a, #0a0a0a) padding-box, linear-gradient(to right, #6cc3fa, #ff88ce) border-box;
+  border-radius: 1em;
+  border: 2px dashed #0a0a0a;
+}
+
+.carousel-wrapper .rec-arrow {
+  background-color: transparent;
+  background: linear-gradient(90deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 1) 100%);
+  box-shadow: none;
+  height: 100%;
+  border-radius: 0;
+  min-width: 10px;
+  width: auto;
+}
+
+.carousel-wrapper .rec-arrow:hover:enabled,
+.daATWJ:focus:enabled {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.carousel-wrapper .rec-pagination {
+  display: none;
+}
+
+.home-border-right {
+  border-image: linear-gradient(210deg, rgba(10, 10, 10, 0), rgba(34, 34, 34, 1)) 1;
+  border-right: 1px solid transparent;
+  margin-right: -0.5px;
+}
+
+.home-border-top {
+  border-image: linear-gradient(160deg, rgba(10, 10, 10, 0), rgba(34, 34, 34, 1)) 1;
+  border-top: 1px solid transparent;
+  margin-top: -1.5px;
+}
+
+.home-border-bottom {
+  border-image: linear-gradient(340deg, rgba(10, 10, 10, 0), rgba(34, 34, 34, 1)) 1;
+  border-bottom: 1px solid transparent;
+}
+
+.home-border-left {
+  border-image: linear-gradient(20deg, rgba(10, 10, 10, 0), rgba(34, 34, 34, 1)) 1;
+  border-left: 1px solid transparent;
+}
+
+.wallet-border-XPL {
+  border: 1px solid #0a0a0a;
+}
+
+.wallet-border-XPL:hover {
+  box-shadow: 0 4px 26px 0 rgba(242, 107, 212, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-20deg, #0a0a0a, #0a0a0a) padding-box,
+    linear-gradient(-20deg, rgba(242, 107, 212, 0.7), rgba(242, 107, 212, 0.1)) border-box;
+  border: 1px solid transparent;
+  transition: ease-in-out 0.2s;
+}
+
+.wallet-border-PUSD {
+  border: 1px solid #0a0a0a;
+}
+
+.wallet-border-PUSD:hover {
+  box-shadow: 0 4px 26px 0 rgba(98, 137, 238, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-20deg, #0a0a0a, #0a0a0a) padding-box,
+    linear-gradient(-20deg, rgba(98, 137, 238, 0.7), rgba(242, 107, 212, 0.1)) border-box;
+  border: 1px solid transparent;
+  transition: ease-in 0.2s;
+}
+
+.wallet-border-AUSD {
+  border: 1px solid #0a0a0a;
+}
+
+.wallet-border-AUSD:hover {
+  box-shadow: 0 4px 26px 0 rgba(238, 182, 98, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-20deg, #0a0a0a, #0a0a0a) padding-box,
+    linear-gradient(-20deg, rgba(238, 182, 98, 0.7), rgba(242, 107, 212, 0.1)) border-box;
+  border: 1px solid transparent;
+  transition: ease-in 0.2s;
+}
+
+.wallet-border-USDT {
+  border: 1px solid #0a0a0a;
+}
+
+.wallet-border-USDT:hover {
+  box-shadow: 0 4px 26px 0 rgba(83, 174, 148, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-20deg, #0a0a0a, #0a0a0a) padding-box,
+    linear-gradient(-20deg, rgba(83, 174, 148, 0.7), rgba(242, 107, 212, 0.1)) border-box;
+  border: 1px solid transparent;
+  transition: ease-in 0.2s;
+}
+
+/* shadow-[0_0px_30px_-10px_rgba(242,107,212,0.9)] */
+.XPL-Shadow {
+  box-shadow: 0 0 20px 0 rgba(242, 107, 212, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.PUSD-Shadow {
+  box-shadow: 0 0 20px 0 rgba(98, 137, 238, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.AUSD-Shadow {
+  box-shadow: 0 0 20px 0 rgba(238, 182, 98, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.USDT-Shadow {
+  box-shadow: 0 0 20px 0 rgba(83, 174, 148, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.RichInputBase-root-20 {
+  outline: 2px solid white;
+}
+.RichInputBase-input-31 {
+  color: white !important;
+}
+.RichInputToolbar-root-36 {
+  background-color: white;
+}

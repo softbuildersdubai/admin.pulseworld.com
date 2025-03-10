@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+  <path d="M18,5.5h-9M12,15.5H3" fill="none" stroke="#26a5ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <circle cx="15" cy="15.5" r="3" fill="none" stroke="#26a5ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <circle cx="5" cy="5.5" r="3" fill="none" stroke="#26a5ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>
