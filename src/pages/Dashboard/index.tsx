@@ -16,7 +16,6 @@ import { Tabs } from 'antd';
 import { Tab } from '@mui/material';
 import Button from '../../components/Button';
 import { log } from 'console';
-import TransactionHistory from '../TransactionHistory';
 import ClaimHistory from '../TransactionHistory/ClaimHistory';
 import WithdrawHistory from '../TransactionHistory/WithdrawHistory';
 import { useNavigate } from 'react-router-dom';

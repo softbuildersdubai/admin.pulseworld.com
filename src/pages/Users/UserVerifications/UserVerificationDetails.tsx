@@ -29,11 +29,11 @@ const UserVerificationDetails = () => {
   const fetchData = async () => {
     const info = await getSingleCustomerVerificationInfo(params.id);
     setData(info);
+    console.log(info)
   };
 
   useEffect(() => {
     fetchData();
-    console.log(data)
   }, []);
 
   const [confirmOpen, setConfirmOpen] = useState(false);
@@ -154,15 +154,25 @@ const UserVerificationDetails = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5">
               {data?.verificationFiles?.kycContract && (
-                <div className="border border-[#222222] border-dashed flex justify-center items-center flex-col py-6 bg-[#0f0f0f] rounded-md">
+                <div className="border border-[#222222] border-dashed flex justify-center items-center flex-col p-6 bg-[#0f0f0f] rounded-md">
                   <p className="text-sm text-white font-semibold pb-5">
-                    {VERIFICATION_DOCUMENT_FIELD_TITLE[data.verificationFiles.kycContract.documentType]}
+                    {data.verificationFiles.kycContract.documentType}
                   </p>
-                  <ZoomImage
-                    path={data.verificationFiles.kycContract.path}
-                    alt="Government Photo"
-                    className="w-full md:w-72 border-solid border-2 border-gray-400 rounded-md"
-                  />
+                  {data.verificationFiles.kycContract.path.toLowerCase().endsWith('.pdf') ? (
+                    <embed
+                      src={data.verificationFiles.kycContract.path}
+                      type="application/pdf"
+                      width="100%"
+                      height="500px"
+                      className="border-solid border-2 border-gray-400 rounded-md"
+                    />
+                  ) : (
+                    <ZoomImage
+                      path={data.verificationFiles.kycContract.path}
+                      alt="Government Photo"
+                      className="w-full md:w-72 border-solid border-2 border-gray-400 rounded-md"
+                    />
+                  )}
                 </div>
               )}
             </div>

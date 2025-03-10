@@ -50,9 +50,15 @@ const WithdrawRequests = () => {
         <div
           className="flex gap-1 items-center cursor-pointer px-3"
           onClick={async () => {
-            setLoading(true);
-            await getWithdrawRequests(true);
-            setLoading(false);
+            try {
+              setLoading(true);
+              await getWithdrawRequests(true, filter);
+              setLoading(false);
+            } catch (error) {
+              setLoading(false);
+            } finally {
+              setLoading(false);
+            }
           }}
         >
           <img src={refresh} alt="" width={24} height={24} />
