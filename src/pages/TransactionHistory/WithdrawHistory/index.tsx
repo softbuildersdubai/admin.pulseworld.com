@@ -132,7 +132,7 @@ const WithdrawHistory = () => {
   }, [filter.search]);
 
   return (
-    <div className="w-full px-2">
+    <div className="w-full px-5">
       <div className="flex bg-primary items-center text-white">
         <h1 className="flex-1 font-bold text-2xl py-5">Withdraw History</h1>
         <div

@@ -23,7 +23,7 @@ const UserVerificationRequests = () => {
   }, []);
 
   return (
-    <div className="w-full rounded-md">
+    <div className="w-full rounded-md px-5">
       {/* PAGE TITLE */}
       <div className="flex bg-primary items-center text-white">
         <h1 className="flex-1 font-bold text-2xl py-5">KYC Verification Requests</h1>
